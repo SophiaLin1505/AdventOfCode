@@ -15,7 +15,7 @@ Advent of Code 2021
 
 
  
-* **Day 2 2021: Dive!
+* **Day 2 2021: Dive!**
   * Part one: In part one of Dive! the goal is to find the horizontal position and depth you would have after following the planned course, to answer the question you multiply the horizontal and depth position. First, I imported the data file into an ArrayList of strings. In the first method called *Horizontal* it goes through the ArrayList of Strings. If the string in the ArrayList equals forward, then the number following it is added to the count, which was initialized at the beginning of the method. To convert the string into an integer of the number following the direction I used *Integer.parseInt*. In the next method called *Vertical* does basically the same thing as *Horizontal* except instead of looking for the String equal to *forward* it looks for *up* and *down*. If *up* is found, the vertical count is subtracted by the number following up. If *down* is found, the vertical cound is added by the number following down.
   * Part Two: In part two, I combined the vertical and horizontal method made previously in part one in a method called *aim*. The integer aim is initialized to 0. If forward is fownd in the string then the Horizontal count increased by the number following forward (x) and Vertical count is increased by the number followinf forward(x) times the aim. If up is found then aim is subtracted by the number following up(x) and if down is found then aim is increased by the number following down. 
   * *I learned how to use Integer.parseInt to convert a string into an integer* 
